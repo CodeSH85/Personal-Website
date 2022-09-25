@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Web|ChouSH</title>
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/stylesheet.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header class="header">
+    <a class="logo" href="">HANK CHOU</a>
+    <nav class="navbar">
+      <ul class="navul" id="navul">
+        <li class="worksBtn mainBtn" id="worksBtn"><a href="#">Protfolio</a></li>
+        <li class="skillsBtn mainBtn" id="skillsBtn"><a href="#">Skills</a></li>
+        <li class="aboutMeBtn mainBtn" id="aboutMeBtn"><a href="#">About Me</a></li>
+        <li><button class="modeSwitchBtn" id="modeSwitchBtn" type="button">sw</button></li>
+      </ul>
+    </nav>
+  </header>
+  <aside>
+    <button><i class="fa-solid fa-angles-left"></i> Back to top</button>
+  </aside>
+  <main>
+    <section class="intro" id="intro">
+      <h1 class="mainTitle">Hi!<br>I'm
+        <span>H</span><span>a</span><span>n</span><span>k</span><span>C</span><span>h</span><span>o</span><span>u</span><span>.</span>
+      </h1>
+      <h2 class="mainTitle subTitle">嗨! 我是周書漢。</h2>
+      <p class="subIntro"><span>ART / </span><span> DESIGN / </span><span> CODE</span></p>
+      <div class="scrollIcon" id="scrollIcon">Scroll Down<br>
+        <i class="fa-solid fa-arrow-down"></i>
+      </div>
+    </section>
+    <div class="canvasContainer" id="Container">
+      <canvas class="canvas" id="canvas"></canvas>
+    </div>
+    <section class="portfolio" id="portfolio">
+      <div class="portTitleContanier" id="portTitleContanier">
+        <div class="portTitle" id="portTitle">
+          <h2>作品</h2>
+          <h2 class="subTitle">Portfolio</h2>
+        </div>
+        <div class="portBtnContanier" id="portBtnContanier">
+          <button class="portMore" id="portMore">More</button>
+        </div>
+      </div>
+      <ul class="cardContainer" id="cardContainer">
+        <li class="projectCard" id="projectCard">
+          <img class="cardImg" id="cardImg"
+            src="https://media.istockphoto.com/vectors/loading-icon-load-load-icon-white-background-loading-vector-icon-vector-id1171583283?k=20&m=1171583283&s=170667a&w=0&h=2e3Y52z_Ja0vNb-TcwsmE4vwcGPeItUkLO76PA61n1w="
+            alt="project1">
+        </li>
+        <li class="projectCard" id="projectCard">
+          <img class="cardImg" id="cardImg"
+            src="https://media.istockphoto.com/vectors/loading-icon-load-load-icon-white-background-loading-vector-icon-vector-id1171583283?k=20&m=1171583283&s=170667a&w=0&h=2e3Y52z_Ja0vNb-TcwsmE4vwcGPeItUkLO76PA61n1w="
+            alt="project1">
+        </li>
+        <li class="projectCard" id="projectCard">
+          <img class="cardImg" id="cardImg"
+            src="https://media.istockphoto.com/vectors/loading-icon-load-load-icon-white-background-loading-vector-icon-vector-id1171583283?k=20&m=1171583283&s=170667a&w=0&h=2e3Y52z_Ja0vNb-TcwsmE4vwcGPeItUkLO76PA61n1w="
+            alt="project1">
+        </li>
+        <li class="projectCard" id="projectCard">
+          <img class="cardImg" id="cardImg"
+            src="https://media.istockphoto.com/vectors/loading-icon-load-load-icon-white-background-loading-vector-icon-vector-id1171583283?k=20&m=1171583283&s=170667a&w=0&h=2e3Y52z_Ja0vNb-TcwsmE4vwcGPeItUkLO76PA61n1w="
+            alt="project1">
+        </li>
+        <li class="projectCard" id="projectCard">
+          <img class="cardImg" id="cardImg"
+            src="https://media.istockphoto.com/vectors/loading-icon-load-load-icon-white-background-loading-vector-icon-vector-id1171583283?k=20&m=1171583283&s=170667a&w=0&h=2e3Y52z_Ja0vNb-TcwsmE4vwcGPeItUkLO76PA61n1w="
+            alt="project1">
+        </li>
+      </ul>
+    </section>
+    <section class="skill">
+      <h2 class="skillTitle">技能<span></span></h2>
+      <h2 class="skillTitle subTitle">Skill</h2>
+      <article class="skillcontent" id="skillcontent">
+        <div class="skillContainer">
+          <ul>
+            <li>
+              <p class="skillItem"><i class="fa-solid fa-circle"></i>PhotoShop</p>
+              <p class="skillDesc">修煉中</p>
+            </li>
+            <li>
+              <p class="skillItem"><i class="fa-solid fa-circle"></i>Illustrator</p>
+              <p class="skillDesc">修煉中</p>
+            </li>
+            <li>
+              <p class="skillItem"><i class="fa-solid fa-circle"></i>AfterEffect</p>
+              <p class="skillDesc">修煉中</p>
+            </li>
+            <li>
+              <p class="skillItem"><i class="fa-solid fa-circle"></i>Blender</p>
+              <p class="skillDesc">修煉中</p>
+            </li>
+          </ul>
+        </div>
+        <div class="skillContainer">
+          <ul>
+            <li>
+              <p class="skillItem"><i class="fa-solid fa-circle"></i>HTML</p>
+              <p class="skillDesc">修煉中</p>
+            </li>
+            <li>
+              <p class="skillItem"><i class="fa-solid fa-circle"></i>CSS</p>
+              <p class="skillDesc">修煉中</p>
+            </li>
+            <li>
+              <p class="skillItem"><i class="fa-solid fa-circle"></i>JavaScript</p>
+              <p class="skillDesc">修煉中</p>
+            </li>
+          </ul>
+        </div>
+        <div class="skillContainer">
+          <ul>
+            <li>
+              <p class="skillItem"><i class="fa-solid fa-circle"></i>SQL</p>
+              <p class="skillDesc">修煉中</p>
+            </li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+      </article>
+      <div class="cardContainer skillCard" id="skillCardP"></div>
+    </section>
+    <section class="aboutMe">
+      <div>
+        <h2 class="aboutTitle">關於我</h2>
+        <h2 class="aboutTitle subTitle">About Me</h2>
+      </div>
+      <div class="aboutContent">
+        <article>
+          設計系畢業，在往成為工程師的路上掙扎中。<br>
+          Struggling on the way to become a programmer.<br>
+          <a><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.artstation.com/csh" target="_blank"><i class="fa-brands fa-artstation"></i></a>
+        </article>
+        <div class="aboutPicContain">
+          <img class="aboutPic" src="https://i.kym-cdn.com/photos/images/newsfeed/001/605/356/276.jpg" alt="me">
+        </div>
+      </div>
+    </section>
+    <section class="formSec">
+      <form action="" method="post">
+        <legend class="formTitle" for="name">聯絡我</legend>
+        <legend class="formSubTitle">Contact me</legend>
+        <input class="inputEle name" type="text" placeholder="Name">
+        <input class="inputEle email" type="email" placeholder="Email">
+        <input class="inputEle title" type="text" placeholder="Title">
+        <label for="">
+          <textarea class="inputEle" id="msg" name="msg" cols="30" rows="10" placeholder="Message"></textarea>
+        </label>
+        <button class="sendBtn" id="sendBtn" type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>Made by HankChou</p>
+  </footer>
+  <script src="./js/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.5/dat.gui.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/stats.js/r11/Stats.min.js"></script>
+  <script src="./js/sketch.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,462 @@
+/* === Links === */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700&display=swap');
+
+
+/* === Variables === */
+
+:root {
+  /* Main Color */
+  --mainColor:#060918;
+  --mainColor2:#22d8f0;
+  --mainColor3:#ffa600;
+  --formColor:#127c8a;
+  /* font */
+  --FontColor:rgb(234, 243, 255);
+  --FontColor2: rgb(142, 144, 148);
+  --mainCHFont:'Noto Sans TC', sans-serif;
+  --mainENFont:'Noto Sans TC', sans-serif;
+}
+
+/* === Global Styles === */
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow-x:hidden;
+  overflow-y:scroll;
+  background-color: var(--mainColor);
+  color: var(--FontColor);
+  line-height: 1.5;
+  font-size: 0.875rem;
+  font-family: var(--mainCHFont);
+}
+main {
+  display: block;
+}
+h1{
+  font-size: 6rem;
+}
+h2{
+  font-size: 4rem;
+}
+nav{
+  display: flex;
+}
+a{
+  text-decoration: none;
+}
+ul{
+  list-style-type: none;
+}
+img {
+  display: block;
+}
+button{
+  border-style: none;
+  padding: 0;
+  overflow: visible;
+}
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+header{
+  width: 100%;
+  height: 7rem;
+  position: absolute;
+  top: 0;
+}
+section{
+  width: 90%;
+  padding: 0 5rem;
+  align-self: center;
+  margin: 0 auto;
+  margin-top: 5rem;
+}
+footer{
+  position: absolute;
+  display:flex;
+  width: 100%;
+  min-height: 8rem;
+  bottom:auto;
+  background-color: rgb(5, 11, 39);
+  justify-content: center;
+}
+@media screen and (max-width: 768px) {
+  section{
+    width: 100%;
+  }
+}
+/* === MainNav === */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.navul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-around;
+  align-items: center;
+  width: 35rem;
+}
+  .logo {
+    height: 2rem;
+    align-self: center;
+    font-size: 1.2rem;
+    text-decoration: none;
+    margin-left: 3rem;
+    color: var(--mainColor2);
+  }
+  .navul li{
+    align-self: center;
+  }
+  .mainBtn{
+    display: flex;
+  }
+  .mainBtn a{
+    min-width: 7rem;
+    padding: 0.5rem 0px;
+    border: 0.6px solid aqua;
+    text-align: center;
+    color: aqua;
+    font-size: 0.85rem;
+    letter-spacing: 0.1rem;
+    transition: 0.5s;
+    }
+  .mainBtn a:hover{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: var(--mainColor2);
+  }
+  .modeSwitchBtn{
+    background-color: rgb(255, 136, 0);
+    width: 50px ;
+  }
+  input {
+    all: unset;
+  }
+/* === IntroSection === */
+#stats { 
+	position: absolute; 
+	z-index: 10; 
+	left: 10px; 
+	top: 10px; 
+}
+.dg.ac {
+	z-index: 100 !important;
+}
+.intro{
+  margin-top: -5rem;
+  min-height: 70vh;
+}
+.mainTitle{
+  position: relative;
+  font-size: 5rem;
+  line-height: 6rem;
+  font-family: var(--mainCHFont);
+  margin: 40vh 0 0 0;
+  user-select: none;
+}
+.mainTitle.subTitle{
+  font-size: 3rem;
+  letter-spacing: 0.1em;
+  font-family: var(--mainCHFont);
+  margin: 0 0 0 0;
+}
+.mainTitle span{
+  color: var(--mainColor3);
+  transition: 0.5s;
+  }
+  .mainTitle span:hover{
+    color: rgba(255, 0, 0, 0);
+  }
+.subIntro{
+  color:var(--mainColor2);
+}
+.canvas{
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+  top:0;
+  right:0;
+}
+.scrollIcon{
+  color: var(--mainColor2);
+  font-size: 1rem;
+  position:absolute;
+  bottom: 13vh;
+  right: 50%;
+  text-align: center;
+  user-select: none;
+}
+@media screen and (max-width: 768px) {
+  .intro{
+    width: 100vw;
+    height: 100vh;
+  }
+  .mainTitle{
+    font-size: 5rem;
+  }
+  .mainTitle.subTitle{
+    font-size: 3rem;
+  }
+  .mainTitle span{
+    color: var(--mainColor3);
+  }
+  .scrollIcon{
+
+  }
+}
+/* === Aside === */
+aside{
+  position: fixed;
+  right: 1rem;
+  bottom: 12rem;
+  display: flex;
+  letter-spacing: 0.1rem;
+  flex-direction: column;
+}
+aside>button{
+  font-size: 1rem;
+  color: var(--mainColor2);
+  transform: rotate(90deg);
+  background-color: rgba(255, 0, 0, 0);
+  height: 1.8rem;
+  width: 8rem;
+  border: 0.8px solid var(--mainColor2);
+  transition: 0.5s;
+  cursor: pointer;
+}
+  aside>button:hover{
+    color: #fff;
+    background-color: var(--mainColor2);
+    border: 0.8px solid var(--mainColor2);
+  }
+@media screen and (max-width: 768px) {
+  aside{
+    display: none;
+  }
+}
+/* === portfolioSection === */
+.portfolio{
+  min-height: 70vh;
+  height: 100%;
+  margin-bottom: 10rem;
+}
+.portTitleContanier{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.portTitle h2{
+  font-size: 3rem;
+}
+.portTitle>.subTitle{
+  color: var(--mainColor2);
+  font-size: 2rem;
+}
+.portMore{
+  font-size: 1rem;
+  color: var(--mainColor2);
+  background-color: rgba(255, 0, 0, 0);
+  height: 1.8rem;
+  width: 8rem;
+  letter-spacing: 0.1rem;
+  border: 0.8px solid var(--mainColor2);
+  transition: 0.5s;
+  cursor: pointer;
+}
+  .portMore:hover{
+    color: #fff;
+    background-color: var(--mainColor2);
+    border: 0.8px solid var(--mainColor2);
+  }
+.cardContainer{
+  margin-top: 3rem;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+  .projectCard{
+    width: 20rem;
+    height: 20rem;
+    flex-grow: 1;
+  }
+  .cardImg{
+    min-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    vertical-align: bottom;
+    cursor: pointer;
+  }
+    .cardImg:hover{
+      opacity: 70%;
+    }
+@media screen and (max-width: 1200px){
+  .projectCard {
+    min-width: 20rem;
+    max-height: 20rem;
+  }
+}
+/* === skillSection === */
+.skill{
+  min-height: 70vh;
+  max-height: 100%;
+}
+.skillTitle{
+  font-size: 3rem;
+}
+.skillTitle.subTitle{
+  color: var(--mainColor2);
+  font-size: 2rem;
+}
+.skillcontent{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 3rem;
+  background: #020511;
+}
+.skillContainer{
+  min-width: 20rem;
+}
+.skillContainer li{
+  margin-bottom: 3rem;
+}
+.skillItem{
+  color: var(--mainColor3);
+  font-size: 1.5rem;
+  margin-bottom: 0.6rem;
+}
+.fa-circle{
+  font-size: 0.1rem;
+  padding-right: 1rem;
+}
+.skillDesc{
+  font-size: 1rem;
+  line-height:2rem;
+}
+@media screen and (max-width: 768px){
+  .skillcontent{
+    display: block;
+  }
+}
+/* === aboutSection === */
+.aboutMe {
+  min-height: 50vh;
+  max-height: 100%;
+}
+.aboutTitle{
+  font-size: 3rem;
+}
+.aboutTitle.subTitle{
+  color: var(--mainColor2);
+  font-size: 2rem;
+}
+.aboutContent{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 3rem;
+}
+.aboutContent>article{
+  color: var(--FontColor);
+  font-size: 1rem;
+  cursor: pointer;
+}
+.fa-github,.fa-artstation{
+  color: var(--FontColor);
+  text-decoration: none;
+  font-size: 1.3rem;
+  margin: 1.3rem 0.3rem 0 0;
+}
+  .fa-github:hover,.fa-artstation:hover{
+    color: var(--mainColor2);
+  }
+.aboutPicContain>img{
+  width: 300px;
+}
+@media screen and (max-width: 768px){
+  .aboutContent{
+    display: block;
+  }
+}
+/* === FormSection === */
+.formSec{
+  max-height: 100% ;
+  overflow: hidden;
+  margin-bottom: 4rem;
+}
+.formSec input{
+  display: block;
+}
+.formTitle{
+  font-size: 2.8rem;
+  font-family: var(--mainCHFont);
+}
+.formSubTitle{
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color:var(--mainColor2)
+}
+.formSec{
+  height: 100%;
+}
+.inputEle{
+  color:#c8c8c8;
+  border: 1px solid var(--formColor);
+  background-color: rgb(59, 59, 59, 0);
+  line-height: 1.15rem;
+  font-size: 16px;
+  padding-left: 10px;
+}
+.inputEle:focus{
+  border: 1.2px solid var(--mainColor3);
+}
+.name,
+.email,
+.title{
+  width: 30rem;
+  height: 3rem;
+  margin-bottom: 0.8rem;
+}
+.formSec textarea{
+  width: 50%;
+  min-width: 40%;
+  max-width: 60%;
+  min-height: 5rem;
+  max-height: 20vh;
+  padding: 10px;
+}
+.sendBtn{
+  display: block;
+  cursor: pointer;
+  text-decoration: none;
+  background-color: rgba(255, 0, 0, 0);
+  min-width: 7rem;
+  padding: 0.5rem 0px;
+  border: 0.6px solid var(--mainColor2);
+  text-align: center;
+  color: var(--mainColor2);
+  font-size: 0.85rem;
+  letter-spacing: 0.1rem;
+  transition: 0.5s;
+}
+.sendBtn:hover{
+  color: rgb(255, 255, 255);
+  background-color: var(--mainColor2);
+}
+/* === footer === */
+footer>p{
+  align-self: center;
+  color:var(--FontColor2) ;
+}
